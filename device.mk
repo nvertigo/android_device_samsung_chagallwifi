@@ -25,6 +25,12 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/chagallwifi/overlay
 PRODUCT_AAPT_CONFIG := normal xlarge hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService \
+    com.dsi.ant.antradio_library \
+    libantradio
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.universal5420 \
