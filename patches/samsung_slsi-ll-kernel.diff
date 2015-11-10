@@ -1,0 +1,28 @@
+
+project hardware/samsung_slsi/exynos/
+diff --git a/hardware/samsung_slsi/exynos/include/exynos_v4l2.h b/hardware/samsung_slsi/exynos/include/exynos_v4l2.h
+index ed26397..ba86108 100644
+--- a/hardware/samsung_slsi/exynos/include/exynos_v4l2.h
++++ b/hardware/samsung_slsi/exynos/include/exynos_v4l2.h
+@@ -43,6 +43,7 @@ extern "C" {
+ #include <stdbool.h>
+ #include <linux/videodev2.h> /* vendor specific videodev2.h */
+ #include <linux/videodev2_exynos_media.h>
++#include <linux/videodev2_exynos_media_ext.h>
+ 
+ /*! \ingroup exynos_v4l2 */
+ int exynos_v4l2_open(const char *filename, int oflag, ...);
+
+project hardware/samsung_slsi/exynos5/
+diff --git a/hardware/samsung_slsi/exynos5/include/exynos_v4l2.h b/hardware/samsung_slsi/exynos5/include/exynos_v4l2.h
+index bd297a1..156235c 100644
+--- a/hardware/samsung_slsi/exynos5/include/exynos_v4l2.h
++++ b/hardware/samsung_slsi/exynos5/include/exynos_v4l2.h
+@@ -43,6 +43,7 @@ extern "C" {
+ #include <stdbool.h>
+ #include <linux/videodev2.h> /* vendor specific videodev2.h */
+ #include "videodev2_exynos_media.h"
++#include "videodev2_exynos_media_ext.h"
+ 
+ /*! \ingroup exynos_v4l2 */
+ int exynos_v4l2_open(const char *filename, int oflag, ...);
