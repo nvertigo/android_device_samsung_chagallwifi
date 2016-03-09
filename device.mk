@@ -124,7 +124,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcsc \
     libExynosOMX_Core \
-    libOMX.Exynos.MP3.Decoder \
     libstagefrighthw \
     libOMX.Exynos.AVC.Decoder \
     libOMX.Exynos.AVC.Encoder \
