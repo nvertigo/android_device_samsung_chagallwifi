@@ -190,10 +190,16 @@ PRODUCT_PACKAGES += \
     init.universal5420.wifi.rc \
     ueventd.universal5420.rc
 
-# Radio (needed for audio controls even on wifi-only)
+# Radio
 PRODUCT_PACKAGES += \
     libsecril-client \
-    libsecril-client-sap
+    libsecril-client-sap \
+    libril \
+    librilutils \
+    rild \
+    libxml2 \
+    libprotobuf-cpp-full \
+    modemloader
 
 # Recovery
 PRODUCT_PACKAGES += \
