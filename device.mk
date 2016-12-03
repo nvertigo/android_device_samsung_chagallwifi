@@ -66,6 +66,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     AdvancedDisplay
 
+# Deathly Adiutor App
+PRODUCT_PACKAGES += \
+    DeathlyAdiutor
+ 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
