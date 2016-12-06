@@ -7,7 +7,7 @@ PRODUCT_NAME := cm_chagallwifi
 PRODUCT_DEVICE := chagallwifi
 
 # Unofficial build ID
-TARGET_UNOFFICIAL_BUILD_ID := ristokoo-nvertigo
+TARGET_UNOFFICIAL_BUILD_ID := nvertigo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_MODEL=SM-T800 \
