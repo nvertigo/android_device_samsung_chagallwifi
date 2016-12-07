@@ -81,8 +81,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.universal5420 \
-    libdmitry
+    gps.universal5420
 
 # HW composer
 PRODUCT_PACKAGES += \
