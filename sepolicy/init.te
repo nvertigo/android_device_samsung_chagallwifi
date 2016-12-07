@@ -5,6 +5,7 @@ allow init sswap:process noatsecure;
 allow init tmpfs:lnk_file create;
 allow init wifi_efs_file:file getattr;
 allow init kmsg_device:chr_file write;
+allow init debugfs:dir mounton;
 
 # LD_SHIM_LIBS
 allow init gpsd:process { noatsecure };
