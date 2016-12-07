@@ -86,6 +86,15 @@ service iprenew_bt-pan /system/bin/dhcpcd -n
 	oneshot
 
 on boot
+
+    # Touchscreen (sec_touchscreen)
+    chown system system /sys/class/input/input2/enabled
+    chmod 0660 /sys/class/input/input2/enabled
+
+    # Physical Home Button (gpio-keys)
+    chown system radio /sys/class/input/input9/enabled
+    chmod 0660 /sys/class/input/input9/enabled
+
     mount debugfs /sys/kernel/debug /sys/kernel/debug
     setprop ro.radio.noril yes
     stop ril-daemon
