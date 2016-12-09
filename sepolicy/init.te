@@ -1,12 +1,6 @@
-allow init drmserver_service:service_manager add;
 allow init sswap:process { transition siginh rlimitinh };
 allow init kernel:system module_request;
 allow init sswap:process noatsecure;
-allow init tmpfs:lnk_file create;
 allow init wifi_efs_file:file getattr;
 allow init kmsg_device:chr_file write;
 allow init debugfs:dir mounton;
-
-# LD_SHIM_LIBS
-allow init gpsd:process { noatsecure };
-allow init mediaserver:process { noatsecure };

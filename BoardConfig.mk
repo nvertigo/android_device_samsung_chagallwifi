@@ -85,9 +85,6 @@ BOARD_USES_HWC_SERVICES := true
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-# Hardware
-BOARD_HARDWARE_CLASS += device/samsung/chagallwifi/cmhw
-
 # Keymaster
 BOARD_USES_TRUST_KEYMASTER := true
 
@@ -143,8 +140,8 @@ BOARD_USES_SCALER := true
 BOARD_USES_GSC_VIDEO := true
 
 # SELinux
-BOARD_SEPOLICY_DIRS += \
-	device/samsung/chagallwifi/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/exynos5420-common/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/chagallwifi/sepolicy
 
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
@@ -174,3 +171,6 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagallwifi/releaset
 
 # inherit from the proprietary version
 -include vendor/samsung/chagallwifi/BoardConfigVendor.mk
+
+# Inherit from exynos5420-common
+include device/samsung/exynos5420-common/BoardConfigCommon.mk

@@ -66,10 +66,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     AdvancedDisplay
 
-# Deathly Adiutor App
-PRODUCT_PACKAGES += \
-    DeathlyAdiutor
- 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
@@ -120,22 +116,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.universal5420
 
-# Media profile
-PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml  \
-    $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
-
-# simple kernel module load script
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/01moduleload:system/etc/init.d/01moduleload
-
-# simple script for system tuning
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/10systemtuning:system/etc/init.d/10systemtuning
-
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
@@ -185,13 +165,9 @@ PRODUCT_PACKAGES += \
     power.universal5420
 
 PRODUCT_PACKAGES += \
-    fstab.universal5420 \
-    init.samsung.rc \
-    init.universal5420.rc \
-    init.universal5420.power.rc \
-    init.universal5420.usb.rc \
-    init.universal5420.wifi.rc \
-    ueventd.universal5420.rc
+    init.target.rc \
+    init.universal5420.power.rc
+
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -262,5 +238,5 @@ $(call inherit-product, hardware/samsung_slsi-cm/exynos5420/exynos5420.mk)
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/samsung/chagallwifi/chagallwifi-vendor.mk)
 
-# call the proprietary setup
-$(call inherit-product-if-exists, vendor/samsung/tabs-common/tabs-common-vendor.mk)
+# Import the common tree changes
+include device/samsung/exynos5420-common/exynos5420.mk
