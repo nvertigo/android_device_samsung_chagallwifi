@@ -4,3 +4,4 @@ allow init sswap:process noatsecure;
 allow init wifi_efs_file:file getattr;
 allow init kmsg_device:chr_file write;
 allow init debugfs:dir mounton;
+allow init property_socket:sock_file write;
