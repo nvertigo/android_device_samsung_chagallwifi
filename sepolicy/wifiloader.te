@@ -1,0 +1,1 @@
+allow wifiloader kernel:system module_request;
