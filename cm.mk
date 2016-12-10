@@ -10,6 +10,8 @@ $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 PRODUCT_NAME := cm_chagallwifi
 PRODUCT_DEVICE := chagallwifi
 
+TARGET_UNOFFICIAL_BUILD_ID := teamexynos5420-nvertigo
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_MODEL=SM-T700 \
     PRODUCT_NAME=chagallwifi \
