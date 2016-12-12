@@ -39,7 +39,11 @@ PRODUCT_PACKAGES += \
     fingerprint.universal5420 \
     ValidityService
 
-# Keylayouts
+# Gello
+PRODUCT_PACKAGES += \
+    Gello
+
+# Camera# Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
 
