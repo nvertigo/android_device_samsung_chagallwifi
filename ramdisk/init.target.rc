@@ -1,5 +1,3 @@
-import init.baseband.rc
-
 on post-fs-data
 # Open permissions for touchkey_enable so KeyDisabler can write to it
     chown system root /sys/devices/virtual/sec/sec_touchkey/touchkey_enabled
