@@ -35,6 +35,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_WIDTH := 2560
 TARGET_SCREEN_HEIGHT := 1600
 
+# BusyBox
+PRODUCT_PACKAGES += \
+    busybox
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprintd \
