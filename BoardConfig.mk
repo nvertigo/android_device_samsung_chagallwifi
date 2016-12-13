@@ -48,7 +48,7 @@ BOARD_SEPOLICY_DIRS += device/samsung/exynos5420-common/sepolicy
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
 # custom additions to updater-script
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagalllte/releasetools/ota_from_target_files
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagallwifi/releasetools/ota_from_target_files
 
 # Inherit from exynos5420-common
 include device/samsung/exynos5420-common/BoardConfigCommon.mk
