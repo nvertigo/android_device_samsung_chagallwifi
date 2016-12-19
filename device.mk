@@ -73,5 +73,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/chagallwifi/chagallwifi-vendor.mk)
 
+# call dalvik heap and hwui config
+$(call inherit-product, $(LOCAL_PATH)/configs/frameworks/native/build/chagallwifi-xhdpi-3072-dalvik-heap.mk)
+$(call inherit-product, $(LOCAL_PATH)/configs/frameworks/native/build/chagallwifi-xhdpi-3072-hwui-memory.mk)
+
 # Import the common tree changes
 include device/samsung/exynos5420-common/exynos5420.mk
