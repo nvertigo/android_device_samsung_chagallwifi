@@ -1,0 +1,9 @@
+#============= untrusted_app ==============
+allow untrusted_app kernel:system module_request;
+allow untrusted_app mnt_media_rw_file:dir getattr;
+allow untrusted_app device:dir read;
+allow untrusted_app tombstone_data_file:dir search;
+allow untrusted_app zygote:dir search;
+allow untrusted_app device:dir open;
+allow untrusted_app zygote:file { open read };
+allow untrusted_app battery_service:service_manager find;
