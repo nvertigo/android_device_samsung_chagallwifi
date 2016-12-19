@@ -22,7 +22,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/chagallwifi/overlay
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := xlarge
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
-PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xxxhdpi hdpi mdpi
+PRODUCT_AAPT_PREBUILT_DPI := hdpi mdpi xxhdpi xxxhdpi ldpi
 
 # Audio
 PRODUCT_PACKAGES += \
