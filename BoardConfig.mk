@@ -47,6 +47,9 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 BOARD_SEPOLICY_DIRS += device/samsung/exynos5420-common/sepolicy
 BOARD_SEPOLICY_DIRS += device/samsung/chagallwifi/sepolicy
 
+# double tap to wake
+TARGET_TAP_TO_WAKE_NODE := /sys/devices/platform/s3c2440-i2c.0/i2c-0/0-0020/input/input2/wake_gesture
+
 # custom additions to updater-script
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagallwifi/releasetools/ota_from_target_files
 
