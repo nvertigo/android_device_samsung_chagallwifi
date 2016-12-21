@@ -7,3 +7,6 @@ allow untrusted_app zygote:dir search;
 allow untrusted_app device:dir open;
 allow untrusted_app zygote:file { open read };
 allow untrusted_app battery_service:service_manager find;
+allow untrusted_app block_device:dir read;
+allow untrusted_app efs_file:dir getattr;
+allow untrusted_app unlabeled:dir getattr;

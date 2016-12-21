@@ -2,3 +2,4 @@ allow gpsd kernel:system module_request;
 allow gpsd servicemanager:binder call;
 allow gpsd system_server:binder call;
 allow gpsd system_server:unix_stream_socket read;
+allow gpsd sensorservice_service:service_manager find;
