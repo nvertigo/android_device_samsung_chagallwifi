@@ -1,2 +1,0 @@
-allow fingerprintd system_app:unix_stream_socket { connectto read write setopt };
-allow fingerprintd kernel:system module_request;

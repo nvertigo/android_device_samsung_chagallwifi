@@ -1,8 +1,3 @@
-# Fingerprint
-/system/bin/vcsFPService                                u:object_r:vcs_exec:s0
-/data/validity(/.*)?                                    u:object_r:vcs_data_file:s0
-/dev/validity(/.*)?                                     u:object_r:vcs_device:s0
-/dev/vfsspi                                             u:object_r:vcs_device:s0
 /system/bin/drmserver.samsung   u:object_r:drmserver_exec:s0
 #shell: reenable init.d
 /dev/ttySAC2            u:object_r:shell_device:s0
