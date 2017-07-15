@@ -23,4 +23,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="samsung/chagallwifixx/chagallwifi:6.0.1/MMB29K/T800XXS1CQD2:user/release-keys" \
     TARGET_DEVICE=chagallwifi
 
-BUILD_FINGERPRINT := samsung/chagallwifixx/chagallwifi:6.0.1/MMB29K/T800XXS1CQD2:user/release-keys
+TARGET_UNOFFICIAL_BUILD_ID := nvertigo
