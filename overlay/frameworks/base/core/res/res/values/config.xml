@@ -57,8 +57,8 @@
             32 - Camera
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
-         config to 7. 
-    <integer name="config_deviceHardwareKeys">83</integer>-->
+         config to 7. -->
+    <integer name="config_deviceHardwareKeys">83</integer>
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -71,8 +71,8 @@
             32 - Camera
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
-         config to 7. 
-    <integer name="config_deviceHardwareWakeKeys">65</integer>-->
+         config to 7. -->
+    <integer name="config_deviceHardwareWakeKeys">65</integer>
 
     <!-- VCS limits the number of fingerprints per user to 3 -->
     <integer name="config_fingerprintMaxTemplatesPerUser">3</integer>
