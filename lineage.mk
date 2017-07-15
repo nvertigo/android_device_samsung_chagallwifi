@@ -21,3 +21,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=chagallwifi \
     PRODUCT_DEVICE=chagallwifi \
     TARGET_DEVICE=chagallwifi
+
+TARGET_UNOFFICIAL_BUILD_ID := nvertigo
