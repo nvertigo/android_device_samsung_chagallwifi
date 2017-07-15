@@ -17,7 +17,7 @@
 LOCAL_PATH := device/samsung/chagallwifi
 
 PRODUCT_CHARACTERISTICS := tablet
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/chagallwifi/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal large xlarge
