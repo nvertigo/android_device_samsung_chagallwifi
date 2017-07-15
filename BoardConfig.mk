@@ -35,6 +35,7 @@ USE_CLANG_PLATFORM_BUILD := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_deathly_chagallwifi_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
