@@ -1,3 +1,4 @@
+
 on init
 
     export LD_SHIM_LIBS "/system/bin/gpsd|libshim.so"
@@ -7,8 +8,6 @@ on post-fs-data
     chown system root /sys/devices/virtual/sec/sec_touchkey/touchkey_enabled
 
 on boot
-    stop ril-daemon
-
 # Headphones (Headset)
     chown system system /sys/class/input/input11/enabled
     chmod 0660 /sys/class/input/input11/enabled
