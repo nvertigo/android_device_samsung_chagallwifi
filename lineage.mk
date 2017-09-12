@@ -26,5 +26,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=samsung/chagallwifixx/chagallwifi:6.0.1/MMB29K/T800XXU1CPHB:user/release-keys \
     PRIVATE_BUILD_DESC="chagallwifixx-user 6.0.1 MMB29K T800XXU1CPHB release-keys"
-
-TARGET_UNOFFICIAL_BUILD_ID := nvertigo
