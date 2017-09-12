@@ -50,10 +50,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/gps/gps.xml:system/etc/gps.xml
 
-# Remove packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Ril needed by GPS
 PRODUCT_PACKAGES += \
     libxml2
