@@ -22,3 +22,6 @@ ro.device.screen_res=2560 x 1600 pixels (288 ppi pixel density)
 
 # Storage
 ro.sdcardfs.enable=false
+
+# AptXHD
+persist.bt.enableAptXHD=true
